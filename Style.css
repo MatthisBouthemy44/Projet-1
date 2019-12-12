@@ -2,6 +2,58 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.navigation{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: transparent 2px solid;
+}
+
+.navbar{
+    margin-top: 20px;
+}
+
+nav img{
+    margin-left: 150px;
+}
+
+nav ul{
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: 150px;
+    list-style-type:none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+
+nav li :hover{
+    color: black;
+}
+
+.progress-bar{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 5px;
+    width: 1800px;
+    background-color: dodgerblue;
+}
 
 main {
     display: block;
@@ -24,8 +76,8 @@ a {
 }
 
 .slides{
-    width: calc(1600px * 2);
-    animation: glisse 12s infinite;
+    width: calc(1650px * 2);
+    animation: glisse 14s infinite;
 }
 
 .slide{
@@ -34,24 +86,19 @@ a {
 
 @keyframes glisse {
     0% {
-    transform: translateX(0);
-    }
-    15%{
-        transform: translateX(0);
+    transform: translateX(-50px);
     }
     35%{
-    transform: translateX(-1500px);
+    transform: translateX(-1650px);
     }
     50%{
-        transform: translateX(-1500px);
+        transform: translateX(-1650px);
     }
     100%{
-    transform: translateX(0);
+    transform: translateX(-50px);
     }
 }
-.navigation {
-    
-}
+
 
 
 
