@@ -1,0 +1,68 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size:Large;
+
+}
+
+a {
+    background-color: transparent;
+
+}
+
+.slider{
+    width: 1600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: calc(1600px * 2);
+    animation: glisse 12s infinite;
+}
+
+.slide{
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+    transform: translateX(0);
+    }
+    15%{
+        transform: translateX(0);
+    }
+    35%{
+    transform: translateX(-1500px);
+    }
+    50%{
+        transform: translateX(-1500px);
+    }
+    100%{
+    transform: translateX(0);
+    }
+}
+.navigation {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
