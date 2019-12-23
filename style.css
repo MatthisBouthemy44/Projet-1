@@ -1,0 +1,164 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: transparent 2px solid;
+}
+
+.navbar{
+    margin-top: 20px;
+}
+
+nav img{
+    margin-left: 150px;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 150px;
+    list-style-type:none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+
+nav li :hover{
+    color: black;
+    border-top: #2fa2be 4px solid;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0.67em;
+}
+
+h1{
+    line-height: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+h1 strong{
+    color:#2fa2be;
+}
+
+.progress-bar{
+    height: 3px;
+    width: 20%;
+    background-color: #2fa2be;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.btn{
+    display: inline-block;
+    border-right: none;
+    border-bottom: solid #3292b9;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: #2fa2be;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size:Large;
+}
+
+a {
+    background-color: transparent;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+
+.slider figure{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 200%;
+    margin: 0;
+}
+
+.slider img{
+    width: calc(1650px *2);
+    height: 20%;
+    animation: glisse 14s infinite;
+}
+
+.slider section {
+    top: 0;
+    left: 10%;
+    width: 40%;
+    color: white;
+    font-weight: bold;
+
+}
+
+.slider p{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+@keyframes glisse {
+    0% {
+    transform: translateX(-50px);
+    }
+    35%{
+    transform: translateX(-1650px);
+    }
+    50%{
+        transform: translateX(-1650px);
+    }
+    100%{
+    transform: translateX(-50px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
