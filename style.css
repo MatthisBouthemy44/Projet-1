@@ -1,5 +1,126 @@
-html {
+/**GLOBAL**/
+html{
+	font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/**Structure**/
+article,
+footer{
+    padding-top: 100px;
+}
+
+/**Titre**/
+h1{
+    line-height: 1;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+h1 strong{
+    color: #2fa2be;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/**Liste**/
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+/**Liens**/
+a{
+    text-decoration: none;
+}
+
+/**Médias**/
+figure img{
+    width: 100%;
+}
+
+/**Texte**/
+article > p {
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    width: 75%;
+    text-align: center;
+    color: #848484;
+}
+
+.block {
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.container{
+    margin:auto;
+    max-width: 80%;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #848484;
+    width: 67px;
+    height: 67px;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.disc{
+    position: absolute;
+    border: 5px solid white;
+    width: 15px;
+    height: 15px;
+    background: #2fa2be;
+    border-radius: 50%;
+}
+
+.rotate{
+    position: absolute;
+    top: 5%;
+    left:50%;
+    -webkit-animation: rotate 2s ease-in-out 2 alternate;
+            animation: rotate 2s ease-in-out 2 alternate;
+}
+
+.rotate .disc{
+    -webkit-transform: translate(-50%,-50%) translate(33px,0);
+
 }
 
 .navigation{
@@ -84,6 +205,15 @@ h1 strong{
     text-align: center;
 }
 
+.btn:hover,
+.btn:focus,
+.btn:active{
+    border-bottom: solid #2fa2be;
+    background-color: #3292b9;
+    color: #e4e4e4;
+    -webkit-animation: translate 1s;
+}
+
 main {
     display: block;
 }
@@ -95,6 +225,7 @@ h1 {
 a {
     background-color: transparent;
 }
+/**Slider**/
 
 .slider{
     position: relative;
@@ -135,18 +266,16 @@ a {
 
 @keyframes glisse {
     0% {
-    transform: translateX(-50px);
-    }
-    35%{
-    transform: translateX(-1650px);
+        transform: translateX(-0%);
     }
     50%{
-        transform: translateX(-1650px);
+        transform: translateX(-100%);
     }
     100%{
-    transform: translateX(-50px);
+        transform: translateX(-0%);
     }
 }
+
 
 
 

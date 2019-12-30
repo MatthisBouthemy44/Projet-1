@@ -11,26 +11,27 @@
 	<title>WebAgency</title>
 
 	<!--*Canonical & Favicon*-->
-	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 	<!--*Stylesheet*-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="">
 	<link rel="stylesheet" href="style2.css">
-
-
+	<script src="https://kit.fontawesome.com/c4020047c3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
                               <!--*En tête du site*-->
     <!--*Bar de navigation*-->
     <nav class="navbar">
 
+		<!--*Navbar Control*-->
+		<input id="nav-open" type="radio" name="navbar" checked>
+		<input id="nav-close" type="radio" name="navbar">
+
 		<!--*Logo*-->
 		<a href="#" title="Acceuil">
-			<img src="Images/logo.png" alt="Logo Web Agency">
+			<img src="images/logo.png" alt="Logo Web Agency">
 		</a>
-
-
 
 		<!--*Navigation*-->
 		<ul class="none">
@@ -47,6 +48,14 @@
 				<a href="#">Contact</a>
 			</li>
 		</ul>
+
+		<!--Navbar Controls-->
+		<label class="none absolute crosshair" for="nav-open" title="Fermer">
+			<i class="fas fa-angle-double-up fa-2x" aria-hidden="true"></i>
+		</label>
+		<label class="none absolute crosshair" for="nav-close" title="Fermer">
+			<i class="fas fa-angle-double-up fa-2x" aria-hidden="true"></i>
+		</label>
 	</nav>
 
     <!--*Slider*-->
@@ -54,8 +63,8 @@
 
     <!--Images du slider-->
     <figure class="slide">
-		<img src="Images/bg1.jpg" alt="Petite fille"/>
-		<img src="Images/bg2.jpg" alt="Petit Garcon"/>
+		<img src="images/bg1.jpg" alt="Petite fille"/>
+		<img src="images/bg2.jpg" alt="Petit Garcon"/>
 	</figure>
 
     <!--*Texte du slider*-->
@@ -85,10 +94,11 @@
 
 			<!--*Image Ordinateur*-->
 			<figure>
-				<img class="none" src="Images/main-feature.png" alt="IMAC">
+				<img class="none" src="images/main-feature.png" alt="IMAC">
 			</figure>
 
 			<!--*UX*-->
+			<i class="fas fa-chart-line fa-2x center" aria-hidden="true"></i>
 			<section class="relative">
 				<div class="rotate">
 					<span class="circle"></span>
@@ -104,6 +114,7 @@
 			</section>
 
             <!--*UI*-->
+			<i class="fas fa-cubes fa-2x center" aria-hidden="true"></i>
 			<section class="relative">
 				<div class="rotate">
 					<span class="circle"></span>
@@ -118,6 +129,7 @@
 			</section>
 
             <!--*SEO*-->
+			<i class="fas fa-chart-pie fa-2x center" aria-hidden="true"></i>
 			<section class="relative">
 				<div class="rotate">
 					<span class="circle"></span>
@@ -135,64 +147,113 @@
 		<p>Vous retrouverez ici certaines de nos créations, qui sait ? Ca pourrait vous inspirer !</p>
 
 		<!--*Menu Projets*-->
+		<input id="all" type="radio" name="projects" checked>
+		<input id="creative" type="radio" name="projects">
+		<input id="corporate" type="radio" name="projects">
+		<input id="portfolio" type="radio" name="projects">
+
+
+		<!--*Icones Projets*-->
 		<nav class="menu">
-			<ul>
-				<li><a href="#">All Works</a></li>
-				<li><a href="#">Creative</a></li>
-				<li><a href="#">Corporate</a></li>
-				<li><a href="#">Portfolio</a></li>
-			</ul>
+			<label for="all">
+				All Works
+				<i class="fas fa-caret-down fa-2x" aria-hidden="true"></i>
+			</label>
+			<label for="creative">
+				Creative
+				<i class="fas fa-caret-down fa-2x" aria-hidden="true"></i>
+			</label>
+			<label for="corporate">
+				Corporate
+				<i class="fas fa-caret-down fa-2x" aria-hidden="true"></i>
+			</label>
+			<label for="portfolio">
+				Portfolio
+				<i class="fas fa-caret-down fa-2x" aria-hidden="true"></i>
+			</label>
 		</nav>
 
 		<!--*Projets*-->
 		<figure class="gallerie">
 
 			<!--*1er Projet*-->
-			<img src="Images/lunettes.jpg" alt="">
+			<img src="images/lunettes.jpg" alt=" Des Lunettes Noires">
 			<figcaption>
-
+				<a href="images/lunettes.jpg" title="Voir le projet">
+				   <h3>Black Glasses</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 
 			<!--*2eme Projet*-->
-			<img src="Images/lapin_Rose.jpg" alt="">
+			<img src="images/lapin_Rose.jpg" alt="Un Lapin Rose">
 			<figcaption>
-
+				<a href="images/lapin_Rose.jpg" title="Voir le projet">
+				<h3>Pink Rabbit</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+			    </a>
 			</figcaption>
 
 			<!--*3éme Projet*-->
-			<img src="Images/pompadour.jpg" alt="">
+			<img src="images/pompadour.jpg" alt="Pompadour Orginal 1950">
 			<figcaption>
-				
+				<a href="images/pompadour.jpg" title="Voir le projet">
+				<h3>Original</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 			
 			<!--*4éme Projet*-->
-			<img src="Images/doc.jpg" alt="">
+			<img src="images/doc.jpg" alt=" Un Document">
 			<figcaption>
-
+				<a href="images/doc.jpg" title="Voir le projet">
+				<h3>Harmony</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 
 			<!--*5éme Projet*-->
-			<img src="Images/Black&white.jpg" alt="">
+			<img src="images/Black&white.jpg" alt="Sacs Shopping Noir et Blanc">
 			<figcaption>
-
+				<a href="images/Black&white.jpg" title="Voir le projet">
+				<h3>Mockup Bag</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 
 			<!--*6éme projet*-->
-			<img src="Images/postale.jpg" alt="">
+			<img src="images/postale.jpg" alt=" Une Carte Postale">
 			<figcaption>
-
+				<a href="images/postale.jpg" title="Voir le projet">
+				<h3>Asian Vibe</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 
             <!--*7éme projet*-->
-			<img src="Images/boost.jpg" alt="">
+			<img src="images/boost.jpg" alt=" Une Fusée">
 			<figcaption>
-
+				<a href="images/boost.jpg" title="Voir le projet">
+				<h3>Skywalker</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 
 			<!--*8éme projet*-->
-			<img src="Images/desk.jpg" alt="">
+			<img src="images/desk.jpg" alt="Des Accessoires de bureau">
 			<figcaption>
-
+				<a href="images/desk.jpg" title="Voir le projet">
+				<h3>Office Themes</h3>
+				<p></p>
+				<i class="fas fa-eye" aria-hidden="true"></i>
+				</a>
 			</figcaption>
 		</figure>
 	</main>
@@ -200,7 +261,7 @@
 	<footer class="footer">
 		<!--*Contact*-->
 		<section class="contact">
-			<h3>Contact Info</h3>
+			<h3>Contact Infos</h3>
 
 		<!--*Formulaire*-->
             <form>
@@ -214,13 +275,7 @@
 
         <!--*Map*-->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807224!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549477038031" allowfullscreen></iframe>
-
-
-
 	</footer>
-
-
-
 
 </body>
 </html>
