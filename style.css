@@ -1,3 +1,271 @@
+/**Keyframes**/
+/************/
+
+/**Opacité**/
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+}
+
+/**Rotate**/
+@keyframes rotate {
+    to{
+        -webkit-transform: rotate(-360);
+    }
+}
+
+/**Rotate3d**/
+@-webkit-keyframes rotate3d {
+    from{
+        opacity: 0;
+        -webkit-transform: rotate3d(1,0,1,180deg);
+    }
+}
+@keyframes rotate3d {
+    from{
+        opacity: 0;
+        -webkit-transform: rotate3d(1,0,1,180deg);
+    }
+}
+
+/**Scale**/
+@-webkit-keyframes scale {
+    to{
+        -webkit-transform: scale(1.5);
+    }
+}
+@keyframes scale {
+    to{
+        -webkit-transform: scale(1.5);
+    }
+}
+@-webkit-keyframes scale-opacity {
+    from{
+        opacity: 0;
+        -webkit-transform: scale(0,2);
+    }
+}
+@keyframes scale-opacity {
+    from{
+        opacity: 0;
+        -webkit-transform: scale(0,2);
+    }
+}
+
+/**Skew**/
+@-webkit-keyframes skew {
+    to{
+        -webkit-transform: skew(180deg, 180deg);
+    }
+}
+@keyframes skew {
+    to{
+        -webkit-transform: skew(180deg, 180deg);
+    }
+}
+
+/**Translate**/
+@-webkit-keyframes translate {
+    from,
+    to {
+        -webkit-transform: translate(-5px, -5px);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90%{
+        -webkit-transform: translate(-5px,-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80%{
+        -webkit-transform: translate(5px, 5px);
+    }
+}
+@keyframes translate {
+    from,
+    to {
+        -webkit-transform: translate(-5px, -5px);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90%{
+        -webkit-transform: translate(-5px,-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80%{
+        -webkit-transform: translate(5px, 5px);
+    }
+}
+
+/**TranslateX**/
+@-webkit-keyframes translateX-Large {
+    from{
+        -webkit-transform: translateX(0);
+    }
+
+    25%{
+        -webkit-transform: translateX(-250%);
+    }
+
+    75%{
+        -webkit-transform: translateX(250%);
+    }
+
+    to{
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes translateX-Large {
+    from{
+        -webkit-transform: translateX(0);
+    }
+
+    25%{
+        -webkit-transform: translateX(-250%);
+    }
+
+    75%{
+        -webkit-transform: translateX(250%);
+    }
+
+    to{
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes translateX-paused {
+    from{
+        -webkit-transform: translateX(0);
+        -webkit-animation-play-state: paused;
+    }
+
+    10%{
+        -webkit-transform: translateX(0);
+        -webkit-animation-play-state: running;
+    }
+
+    to{
+        -webkit-transform: translateX(-50%);
+    }
+}
+@keyframes translateX-paused{
+    from{
+        -webkit-transform: translateX(0);
+        -webkit-animation-play-state: paused;
+    }
+
+    10%{
+        -webkit-transform: translateX(0);
+        -webkit-animation-play-state: running;
+    }
+
+    to{
+        -webkit-transform: translateX(-50%);
+    }
+}
+
+@-webkit-keyframes translateX-wide {
+    from{
+        -webkit-transform: translateX(-500%);
+    }
+
+    to{
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes translateX-wide {
+    from{
+        -webkit-transform: translateX(-500%);
+    }
+
+    to{
+        -webkit-transform: translateX(0);
+    }
+}
+
+/**TranslateY**/
+@-webkit-keyframes translate-opacity {
+    from{
+        opacity: 0;
+        -webkit-transform: translateY(68px);
+    }
+}
+@keyframes translate-opacity {
+    from{
+        opacity: 0;
+        -webkit-transform: translateY(68px);
+    }
+}
+
+@-webkit-keyframes translate-tiny {
+    to{
+        -webkit-transform: translateY(10px);
+    }
+}
+@keyframes translate-tiny {
+    to{
+        -webkit-transform: translateY(10px);
+    }
+}
+
+/**Width**/
+@-webkit-keyframes width {
+    from{
+        width: 0;
+        -webkit-animation-play-state: paused;
+    }
+
+    10%{
+        width: 0;
+        -webkit-animation-play-state: running;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+@keyframes width {
+    from{
+        width: 0;
+        -webkit-animation-play-state: paused;
+    }
+
+    10%{
+        width: 0;
+        -webkit-animation-play-state: running;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+@keyframes glisse {
+    0% {
+        transform: translateX(-0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-0%);
+    }
+}
+
+
+
+
 /**GLOBAL**/
 html{
 	font-size: 62.5%;
@@ -133,6 +401,7 @@ article > p {
 
 .navbar{
     margin-top: 20px;
+    display: flex;
 }
 
 nav img{
