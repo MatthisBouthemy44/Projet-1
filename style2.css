@@ -196,12 +196,6 @@ article > p{
     background-color: #2fa2be;
 }
 
-.slider figure {
-    display: flex  ;
-    align-items: flex-start  ;
-    width: 200%  ;
-    margin: 0  ;
-}
 
 /**Navbar**/
 .navbar{
@@ -244,7 +238,7 @@ article > p{
     display: flex;
     top: 0;
     right: 0;
-    padding; 30px 10px;
+    padding: 30px 10px;
 }
 
 
@@ -296,7 +290,7 @@ article > p{
 }
 
 .slider img{
-   width: calc (1650px x2);
+   width: calc(1650px *2);
     height: 20%;
     animation: glisse 14s infinite;
 }
@@ -316,6 +310,7 @@ article > p{
 }
 
 
+
 /**Timeline**/
 .progress-bar{
     height: 3px;
@@ -324,32 +319,28 @@ article > p{
 }
 
 /**Gallerie**/
-.gallerie{
+.Grille{
     display: flex;
-    flex: wrap;
-    overflow: hidden;
-    margin: 40px -6px;
+    flex-wrap: wrap;
+    justify-content:space-around;
 }
 
-.gallerie *{
-    cursor: crosshair;
-}
-
-.gallerie figure{
+ .Grille figure{
     position: relative;
-    overflow: hidden;
-    margin: 6px;
-    width: calc(100% - 12px);
-    line-height: 0;
-}
+     overflow: hidden;
+     margin: 6px;
+     width: calc(100% - 12px);
+     line-height: 0;
+ }
 
-.gallerie figure:hover figcaption{
+
+.Grille figure:hover figcaption{
     display: block;
     animation: translateY-opacity 2s;
     bottom: 0;
 }
 
-.gallerie figcaption{
+.Grille figcaption{
     display: none;
     position: absolute;
     bottom: -60%;
@@ -358,20 +349,20 @@ article > p{
     background-color: rgba(0,0,0,0.5);
 }
 
-.gallerie a{
+.Grille a{
     color: white;
 }
 
-.gallerie a *{
+.Grille a *{
     margin: 0;
     cursor: pointer;
 }
 
-.gallerie a h3{
+.Grille a h3{
     padding: 10px;
 }
 
-.gallerie a p{
+.Grille a p{
     padding: 0 10px 20px;
 }
 
@@ -388,7 +379,7 @@ article > p{
 .contact{
     padding-bottom: 20px;
     height: auto;
-    background-color: rgba(239, 245, 247, 0,9);
+    background-color: rgba(239, 245, 247, 0.9);
 }
 
 .contact > * {
