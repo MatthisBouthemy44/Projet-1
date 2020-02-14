@@ -198,7 +198,7 @@ article > p{
 
 
 /**Navbar**/
-.navbar{
+.navigation{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,31 +210,31 @@ article > p{
     z-index: 10;
 }
 
-.navbar [title="Acceuil"]{
+.navigation [title="Acceuil"]{
     padding: 22px 10px 21px;
     animation: translate 2s linear 1s;
 }
 
-.navbar ul{
+.navigation ul{
     display: flex;
     flex-direction: row;
     justify-content: right;
 }
 
-.navbar ul a {
+.navigation ul a {
     padding: 39px 12px 41px;
     color: #848484;
 }
 
-.navbar ul a:hover,
-.navbar ul a:active,
-.navbar ul a:focus {
+.navigation ul a:hover,
+.navigation ul a:active,
+.navigation ul a:focus {
     border-top: #2fa2be;
     padding-top: 39px;
     color: #606060;
 }
 
-.navbar label{
+.navigation label{
     display: flex;
     top: 0;
     right: 0;
@@ -242,7 +242,7 @@ article > p{
 }
 
 
-.navbar + * {
+.navigation + * {
     margin-top: 100px;
 }
 
@@ -253,6 +253,10 @@ article > p{
 #nav-close:checked ~ a,
 #nav-close:checked ~ [for="nav-close"],
 #nav-close:checked ~ [for="nav-open"]{
+    display: none;
+}
+
+.navbar{
     display: none;
 }
 
