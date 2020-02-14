@@ -322,11 +322,41 @@ article > p{
     background-color: #2fa2be;
 }
 
+.menu{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    align-items: flex-start;
+    position: center;
+    justify-content: space-around;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    list-style: none;
+    background-color: #e4e4e4;
+    color: #848484;
+}
+
+.menu {
+    color: white;
+    background-color: #3292b9;
+}
+
 /**Gallerie**/
 .Grille{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+}
+
+.Grille img{
+    width: 250px;
+    padding: 5px;
+}
+
+figure img {
+    width: 100%;
 }
 
  .Grille figure{
