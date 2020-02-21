@@ -34,19 +34,19 @@ footer{
 /**Titres**/
 h1{
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
 
-strong{
+ h1 strong{
     color:#2fa2be;
 }
 
 h2{
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -70,6 +70,7 @@ figure img{
 iframe{
     width: 100%;
     height: 88vh;
+    filter: blur(90deg);
 }
 article > p{
     margin-top: 25px;
@@ -94,10 +95,6 @@ article > p{
     display: flex;
 }
 
-.absolute{
-    position: absolute;
-}
-
 .relative{
     position: relative;
 }
@@ -116,43 +113,9 @@ article > p{
 }
 
                                         /**DECORATIONS**/
-.center{
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.circle{
-    position: absolute;
-    border-radius: 50%;
-    border:1px solid #848484;
-    width: 67px;
-    height: 67px;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
 
-.disc{
-    position: absolute;
-    border: 5px solid white;
-    width: 15px;
-    height: 15px;
-    background: #2fa2be;
-    border-radius: 50%;
-}
-
-.rotate{
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    animation: rotate 2s ease-in-out 2 alternate;
-}
-
-.disc{
-    transform: translate(-50%, -50%) translate(33px,0);
-}
-
-.under-tittle {
+.under-title {
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -161,17 +124,12 @@ article > p{
     background-color: #848484;
 }
 
-.disc{
+.under-title .disc{
         top: -12px;
         left: 58px;
     }
 
 
-*:hover > .under-tittle .disc,
-*:focus > .under-tittle .disc,
-*:active > .under-tittle .disc{
-    animation: translateX-Large 4s ease-in-out;
-}
 
 .fa-chart-line,
 .fa-cubes,
@@ -201,18 +159,13 @@ article > p{
 .navigation{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100px;
     background-color: white;
     z-index: 10;
-}
-
-.navigation [title="Acceuil"]{
-    padding: 22px 10px 21px;
-    animation: translate 2s linear 1s;
 }
 
 .navigation ul{
@@ -226,38 +179,14 @@ article > p{
     color: #848484;
 }
 
-.navigation ul a:hover,
-.navigation ul a:active,
-.navigation ul a:focus {
-    border-top: #2fa2be;
+.navigation ul a:hover {
+    border-top: solid #2fa2be;
     padding-top: 39px;
     color: #606060;
 }
 
-.navigation label{
-    display: flex;
-    top: 0;
-    right: 0;
-    padding: 30px 10px;
-}
-
-
 .navigation + * {
     margin-top: 100px;
-}
-
-#nav-close:checked ~ ul {
-    display: flex;
-}
-
-#nav-close:checked ~ a,
-#nav-close:checked ~ [for="nav-close"],
-#nav-close:checked ~ [for="nav-open"]{
-    display: none;
-}
-
-.navbar{
-    display: none;
 }
 
 /**Button**/
@@ -269,12 +198,10 @@ article > p{
     padding: 8px 16px;
     background-color: #2fa2be;
     color: white;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-align: center;
 }
-.btn:hover,
-.btn:active,
-.btn:focus{
+.btn:hover, {
     border-bottom: solid #2fa2be;
     background-color: #3292b9;
     color: #e4e4e4;
@@ -300,7 +227,7 @@ article > p{
 }
 
 .slider section {
-    top: 0;
+    top: 25%;
     left: 10%;
     width: 40%;
     color: white;
@@ -310,10 +237,21 @@ article > p{
 .slider p{
     margin-top: -10px;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
+.slider label{
+    top: 30%;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(0.6);
+    z-index: 5;
+}
 
+.absolute{
+    position: absolute;
+}
 
 /**Timeline**/
 .progress-bar{
@@ -322,36 +260,129 @@ article > p{
     background-color: #2fa2be;
 }
 
-.menu{
+/**Image Ordinateur**/
+.text img{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    display: block;`
+    margin-right: auto;
+    margin-left: auto;
+    width: unset;
+}
+
+/**Text Services**/
+.text section{
+    margin-top: 0;
+    margin-left: 50%;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.text section p{
+    margin-left: 20%;
+    margin-top: 10px;
+    text-align: justify;
+    color: #848484;
+}
+
+.text h3{
+    margin-left: 20%;
+    padding-top: 0;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/**Font-Awesome Services**/
+.center{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    border:1px solid #848484;
+    width: 67px;
+    height: 67px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.disc{
+    position: absolute;
+    border: 5px solid white;
+    width: 15px;
+    height: 15px;
+    background: #2fa2be;
+    border-radius: 50%;
+}
+
+.rotate{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    animation: rotate 2s ease-in-out 2 alternate;
+}
+.rotate .disc{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%, -50%) translate(33px, 0);
+    animation: rotate 2s ease-in-out 2 alternate;
+}
+
+
+
+.menu {
     display: flex;
     width: 40%;
     flex-direction: row;
-    align-items: flex-start;
-    position: center;
     justify-content: space-around;
+    position: center;
     margin: auto;
     border: none;
     border-radius: 5px;
     padding: 0;
     list-style: none;
-    background-color: #e4e4e4;
     color: #848484;
 }
+.menu label{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 6px 12px;
+    width: 25%;
+}
 
-.menu {
+
+.label{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+
+.menu label:hover,
+.menu label:focus{
     color: white;
-    background-color: #3292b9;
+    background-color: #2fa2be;
+    border-bottom: solid #3292b9;
+    font-weight: 700;
 }
 
 /**Gallerie**/
 .Grille{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0;
 }
 
 .Grille img{
-    width: 250px;
+    width: 300px;
     padding: 5px;
 }
 
@@ -360,7 +391,9 @@ figure img {
 }
 
  .Grille figure{
-    position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
      overflow: hidden;
      margin: 6px;
      width: calc(100% - 12px);
@@ -411,10 +444,14 @@ figure img {
 
 /**Contact**/
 .contact{
-    padding-bottom: 20px;
+    position: absolute;
+    top: 290%;
+    right: 100px;
     height: auto;
+    width: 300px;
     background-color: rgba(239, 245, 247, 0.9);
 }
+
 
 .contact > * {
     margin: 10px 20px;
@@ -426,7 +463,7 @@ figure img {
 }
 
 .contact section{
-    text-align: center;
+    text-align: left;
     color: #848484;
 }
 
@@ -455,4 +492,8 @@ figure img {
 
 .contact[type="submit"]{
     cursor: not-allowed;
+}
+
+ article, footer{
+    padding-top: 100px;
 }
