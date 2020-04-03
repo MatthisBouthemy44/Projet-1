@@ -70,8 +70,8 @@ figure img{
 iframe{
     width: 100%;
     height: 88vh;
-    filter: blur(90deg);
 }
+
 article > p{
     margin-top: 25px;
     margin-right: auto;
@@ -227,11 +227,11 @@ article > p{
 }
 
 .slider section {
-    top: 25%;
+    top: 10%;
     left: 10%;
     width: 40%;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .slider p{
@@ -345,6 +345,7 @@ article > p{
     border-radius: 5px;
     padding: 0;
     list-style: none;
+    background-color: #e4e4e4;
     color: #848484;
 }
 .menu label{
@@ -445,10 +446,9 @@ figure img {
 /**Contact**/
 .contact{
     position: absolute;
-    top: 290%;
-    right: 100px;
-    height: auto;
-    width: 300px;
+    right: 170px;
+    margin-top: 70px;
+    width: 340px;
     background-color: rgba(239, 245, 247, 0.9);
 }
 
@@ -497,93 +497,195 @@ figure img {
  article, footer{
     padding-top: 100px;
 }
+
 /**Media Queries**/
- @media screen and (min-width: 320px) and (max-width:700px) {
-     .navigation img{
 
-     }
-     .navigation ul{
-         flex-direction: column;
-         justify-content: center;
-     }
-     h1{
-         font-size: x-large;
-         width: 100%;
-     }
-     .slider p{
-         font-size: 1.4rem;
-         width: 100%;
-     }
-     .text img{
-         position: relative;
-     }
-     .text section{
-         width: 100%;
-         margin-left: 0;
-     }
-     .contact{
-         top: 425%;
-     }
-     .Grille img{
-         width: 130px;
-     }
-     .Grille{
-         width: 100%;
-     }
-     .menu{
-         width: 100%;
-         margin-left: 5px;
-     }
- }
-
-@media screen and (min-width: 720px) and (max-width: 1024px){
-    .text img{
-        position: relative;
+@media (min-width: 390px)and (max-width: 575px) {
+    .navigation ul{
+        flex-direction: column;
     }
-    .text section {
+    h1{
+        width: 100%;
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+
+    .text section p{
+        margin-left: 20%;
+    }
+
+    .slider p{
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+    .text img{
+        display: none;
+    }
+    .text section{
         width: 100%;
         margin-left: 0;
     }
-    .Grille img{
-        width: 150px;
+    .menu {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 30%;
     }
     .Grille{
         width: 100%;
-        margin-right: 20px;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-    .menu{
-        width: 100%;
-        margin-left: 5px;
+        grid-template-columns: 50% 50% 50% 50% 50% 50% 50% ;
+        grid-template-rows: 50%;
+        margin-left: -0.5px;
+        justify-content: center;
     }
     .contact{
-        top: 360%;
+        margin-top: 150px;
+        right: 50px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    h1{
+        font-size: 2.1rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .text h3{
+        margin-left: 20%;
+        padding-top: 0;
+        text-align: left;
+    }
+    .text section p{
+        margin-left: 20%;
+    }
+    .center{
+        top: 40%;
+        left: 5%;
+    }
+    .rotate{
+        top: 40%;
+        left: 5%;
+    }
+    .slider p{
+        margin-bottom: 15px;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+    .text img{
+        display: none;
+    }
+    .text section{
+        width: 100%;
+        margin-left: 0;
+    }
+    .menu {
+        width: 80%;
+        justify-content: center;
+    }
+    .Grille{
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin-left: -0.5px;
+        justify-content: center;
+    }
+    .contact{
+        margin-top: 150px;
+        right: 50px;
     }
 }
 
- @media screen and (min-width: 1025px) and (max-width: 1300px){
-     .slider img{
-         width: calc(950px *2);
-     }
-     .text img{
-         position: relative;
-     }
-     .text section{
-         width: 100%;
-         margin-left: 0;
-     }
-     .Grille img{
-         width: 200px;
-     }
-     .Grille{
-         width: 100%;
+@media (min-width: 768px) and (max-width: 991px){
+    h1{
+        font-size: 2.8rem;
+    }
+    .slider p{
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+    .btn{
+        font-size: 1.2rem;
+    }
+    .text img{
+        position: relative;
+    }
+    .text section{
+        width: 100%;
+        margin-left: 0;
+    }
+    .menu {
+        width: 80%;
+        justify-content: center;
+    }
+    .Grille{
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin-left: -0.5px;
+        justify-content: center;
+    }
+    .contact{
+        right: 100px;
+    }
+}
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 3.4rem;
+    }
 
-     }
-     .menu{
-         width: 100%;
-         margin-left: 5%;
-     }
-     .contact{
-         top: 350%;
-     }
- }
+    .slider section {
+        top: 20%;
+    }
+
+    .slider p {
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .text img {
+        position: absolute;
+        top: 40%;
+        left: -10%;
+    }
+
+    .text section {
+        margin-top: 0;
+        margin-left: 50%;
+    }
+
+    .menu {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .Grille {
+        width: 60%;
+        margin-left: 160px;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 25% 25% 25%;
+        justify-content: center;
+    }
+
+    .contact {
+        right: 100px;
+    }
+}
+
+
+
+
+
+
+
+    
