@@ -348,6 +348,10 @@ article > p{
     background-color: #e4e4e4;
     color: #848484;
 }
+.menu *{
+    cursor: pointer;
+}
+
 .menu label{
     display: flex;
     justify-content: center;
@@ -500,23 +504,29 @@ figure img {
 
 /**Media Queries**/
 
-@media (min-width: 390px)and (max-width: 575px) {
+@media (min-width: 370px)and (max-width: 575px) {
     .navigation ul{
         flex-direction: column;
+    }
+
+    .navigation ul a:hover {
+        border-top: none;
     }
     h1{
         width: 100%;
         margin-top: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     h2{
         font-size: 1.9rem;
     }
-
+    .text h3{
+        text-align: center;
+        margin-right: 60px;
+    }
     .text section p{
         margin-left: 20%;
     }
-
     .slider p{
         font-size: 0.9rem;
         margin-bottom: 15px;
@@ -532,20 +542,26 @@ figure img {
         margin-left: 0;
     }
     .menu {
-        justify-content: space-around;
         flex-direction: column;
-        width: 30%;
+        width: 50%;
+    }
+    .menu label{
+        width: 85%;
+        text-align: center;
     }
     .Grille{
         width: 100%;
-        grid-template-columns: 50% 50% 50% 50% 50% 50% 50% ;
-        grid-template-rows: 50%;
-        margin-left: -0.5px;
+        grid-template-rows: 50% 50% 50% 50% 50% 50% 50% ;
+        grid-template-columns: 100%;
+        margin: 0;
+        padding-top: 50px;
         justify-content: center;
     }
+    .Grille img{
+        width: 100%;
+    }
     .contact{
-        margin-top: 150px;
-        right: 50px;
+        right: 20px;
     }
 
 }
@@ -636,7 +652,7 @@ figure img {
         right: 100px;
     }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1030px) {
     h1 {
         font-size: 3.4rem;
     }
