@@ -26,10 +26,8 @@ body{
 }
 
 /**Structure**/
-article,
-footer{
-    padding-top:100px;
-}
+
+
 
 /**Titres**/
 h1{
@@ -68,8 +66,13 @@ figure img{
 }
 
 iframe{
+    opacity: 0.8;
     width: 100%;
     height: 88vh;
+}
+
+.iframe{
+    background-color: #3292b9;
 }
 
 article > p{
@@ -138,7 +141,6 @@ article > p{
 }
 
 .fa-caret-down{
-    display: none;
     position: absolute;
     bottom: -18px;
     color: #3292b9;
@@ -361,17 +363,7 @@ article > p{
     width: 25%;
 }
 
-
-.label{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-radius: 5px;
-    padding: 6px 12px;
-}
-
-.menu label:hover,
-.menu label:focus{
+.Allworks{
     color: white;
     background-color: #2fa2be;
     border-bottom: solid #3292b9;
@@ -456,23 +448,13 @@ figure img {
     background-color: rgba(239, 245, 247, 0.9);
 }
 
-
 .contact > * {
     margin: 10px 20px;
 }
 
 .contact h3{
     font-size: 2.5rem;
-    text-align: center;
-}
-
-.contact section{
     text-align: left;
-    color: #848484;
-}
-
-.contact h4{
-    margin: 0;
 }
 
 .contact address{
@@ -496,6 +478,11 @@ figure img {
 
 .contact[type="submit"]{
     cursor: not-allowed;
+}
+button, input, optgroup, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
 }
 
  article, footer{
@@ -541,6 +528,16 @@ figure img {
         width: 100%;
         margin-left: 0;
     }
+
+    .center{
+        top: 5%;
+        left: 5%;
+    }
+    .rotate{
+        top: 5%;
+        left: 5%;
+    }
+
     .menu {
         flex-direction: column;
         width: 50%;
@@ -549,6 +546,11 @@ figure img {
         width: 85%;
         text-align: center;
     }
+
+    .fa-caret-down{
+        display: none;
+    }
+
     .Grille{
         width: 100%;
         grid-template-rows: 50% 50% 50% 50% 50% 50% 50% ;
@@ -561,7 +563,9 @@ figure img {
         width: 100%;
     }
     .contact{
-        right: 20px;
+        position: relative;
+        width: 100%;
+        right: 5px;
     }
 
 }
@@ -602,6 +606,7 @@ figure img {
         width: 100%;
         margin-left: 0;
     }
+
     .menu {
         width: 80%;
         justify-content: center;
