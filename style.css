@@ -66,6 +66,7 @@ figure img{
 }
 
 iframe{
+    z-index: 1;
     opacity:0.8;
     width: 100%;
     height: 88vh;
@@ -400,6 +401,7 @@ article, footer{
 
 .Grille figure:hover figcaption{
     display: block;
+    padding: -5px;
     animation: translateY-opacity 2s;
     bottom: 0;
 }
@@ -442,6 +444,7 @@ article, footer{
 /**Contact**/
 .contact{
     position: absolute;
+    z-index:2;
     right: 170px;
     margin-top: 70px;
     width: 340px;
