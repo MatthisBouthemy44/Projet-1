@@ -139,7 +139,6 @@ article, footer{
     }
 
 
-
 .fa-chart-line,
 .fa-cubes,
 .fa-chart-pie{
@@ -229,7 +228,7 @@ article, footer{
 }
 
 .slider img{
-   width: calc(1650px *2);
+   width: calc(1680px *2);
     height: 20%;
     animation: glisse 14s infinite;
 }
@@ -249,12 +248,20 @@ article, footer{
 }
 
 .slider label{
-    top: 30%;
-    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    border-radius: 80px ;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
     transform: scale(0.6);
     z-index: 5;
+}
+
+.Right{
+    right: -10px;
+}
+.Left{
+    left: -10px;
 }
 
 .absolute{
@@ -408,7 +415,7 @@ article, footer{
 .Grille figcaption{
     position: absolute;
     bottom: -60%;
-    width: 96.6%;
+    width: 95.6%;
     line-height: 1;
     background-color: rgba(0,0,0,0.5);
 }
@@ -566,6 +573,10 @@ article, footer{
         justify-content: center;
     }
 
+    .Grille figcaption{
+        width: 96.7%;
+    }
+
     .Grille img{
         width: 100%;
     }
@@ -677,6 +688,11 @@ article, footer{
         justify-content: center;
     }
 
+    .Grille figcaption{
+        width: 96.8%;
+    }
+
+
     .contact{
         right: 100px;
     }
@@ -721,6 +737,7 @@ article, footer{
         grid-template-rows: 25% 25% 25%;
         justify-content: center;
     }
+
 
     .contact {
         right: 100px;
