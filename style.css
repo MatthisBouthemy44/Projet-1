@@ -390,7 +390,6 @@ article, footer{
 
  .Grille figure{
      display: flex;
-     flex-wrap: wrap;
      position: relative;
      overflow: hidden;
      margin: 6px;
@@ -401,16 +400,15 @@ article, footer{
 
 .Grille figure:hover figcaption{
     display: block;
-    padding: -5px;
     animation: translateY-opacity 2s;
-    bottom: 0;
+    bottom: 5px;
+    left: 5px;
 }
 
 .Grille figcaption{
-    display: none;
     position: absolute;
     bottom: -60%;
-    width: 100%;
+    width: 96.6%;
     line-height: 1;
     background-color: rgba(0,0,0,0.5);
 }
