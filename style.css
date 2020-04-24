@@ -572,12 +572,9 @@ article, footer{
     }
 
     .Grille figcaption{
-        width: 96.7%;
-    }
-
-    .Grille img{
         width: 100%;
     }
+
 
     .contact{
         position: relative;
@@ -684,10 +681,6 @@ article, footer{
         grid-template-rows: 25% 25% 25% 25%;
         margin-left: -0.5px;
         justify-content: center;
-    }
-
-    .Grille figcaption{
-        width: 96.8%;
     }
 
 
