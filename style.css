@@ -25,10 +25,6 @@ body{
     scroll-behavior: smooth;
 }
 
-/**Structure**/
-
-
-
 /**Titres**/
 h1{
     line-height: 1;
@@ -111,14 +107,6 @@ article, footer{
 .container{
     margin: auto;
     max-width: 80%;
-}
-
-.crosshair{
-    cursor:crosshair;
-}
-
-.pointer{
-    cursor: pointer;
 }
 
                                         /**DECORATIONS**/
@@ -234,7 +222,7 @@ article, footer{
 }
 
 .slider section {
-    top: 10%;
+    top: 25%;
     left: 10%;
     width: 40%;
     color: white;
@@ -249,22 +237,28 @@ article, footer{
 
 .slider label{
     position: absolute;
-    font-size: 2.5em;
-    height: 50px;
+    height: 60px;
     top: 40%;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    transform: scale(0.6);
     z-index: 5;
+    width: 50px;
+}
+
+.slider i{
+    font-size: 1.4em;
+    margin-left: 25%;
+    margin-top: 40%;
+
 }
 
 .Right{
-    right: -15px;
-    border-radius: 40px 10px 10px 40px;
+    right: -20px;
+    border-radius: 50px 0 0 50px;
 }
 .Left{
-    left: -15px;
-    border-radius: 10px 40px 40px 10px;
+    left: -20px;
+    border-radius: 0 50px 50px 0;
 }
 
 
@@ -394,10 +388,6 @@ article, footer{
     grid-gap: 0;
 }
 
-.Grille img{
-    width: 300px;
-    padding: 5px;
-}
 
  .Grille figure{
      display: flex;
@@ -412,14 +402,14 @@ article, footer{
 .Grille figure:hover figcaption{
     display: block;
     animation: translateY-opacity 2s;
-    bottom: 5px;
-    left: 5px;
+    bottom: 0;
+    left: 0;
 }
 
 .Grille figcaption{
     position: absolute;
     bottom: -60%;
-    width: 95.6%;
+    width: 100%;
     line-height: 1;
     background-color: rgba(0,0,0,0.5);
 }
@@ -490,6 +480,10 @@ article, footer{
 
 .contact[type="submit"]{
     cursor: not-allowed;
+}
+
+.underline{
+    text-decoration: underline dotted;
 }
 
 .iframe{
