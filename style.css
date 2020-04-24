@@ -525,6 +525,10 @@ article, footer{
         margin-bottom: 15px;
     }
 
+    .slider section{
+        top: 10%;
+    }
+
     .btn{
         font-size: 1.1rem;
     }
@@ -616,6 +620,7 @@ article, footer{
         margin-bottom: 15px;
     }
 
+
     .btn{
         font-size: 1.1rem;
     }
@@ -682,7 +687,6 @@ article, footer{
         margin-left: -0.5px;
         justify-content: center;
     }
-
 
     .contact{
         right: 100px;
